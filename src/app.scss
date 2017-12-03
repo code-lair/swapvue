@@ -1,0 +1,11 @@
+@import '~bulma';
+
+.gallery {
+    .image {
+        @extend .is-2;
+    }
+
+    .draggable-source--is-dragging{
+        visibility: hidden;
+    }
+}
