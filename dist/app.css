@@ -5433,7 +5433,8 @@ a.tag:hover {
   font-size: 3rem;
 }
 
-.title.is-2 {
+.title.is-2,
+.gallery .title.image {
   font-size: 2.5rem;
 }
 
@@ -5477,7 +5478,8 @@ a.tag:hover {
   font-size: 3rem;
 }
 
-.subtitle.is-2 {
+.subtitle.is-2,
+.gallery .subtitle.image {
   font-size: 2.5rem;
 }
 
@@ -8542,7 +8544,8 @@ label.panel-block:hover {
   margin-left: 8.33333333%;
 }
 
-.columns.is-mobile > .column.is-2 {
+.columns.is-mobile > .column.is-2,
+.gallery .columns.is-mobile > .column.image {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -9056,6 +9059,7 @@ label.panel-block:hover {
   }
 
   .column.is-2,
+  .gallery .column.image,
   .column.is-2-tablet {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -10274,7 +10278,8 @@ label.panel-block:hover {
   --columnGap: 0.25rem;
 }
 
-.columns.is-variable.is-2 {
+.columns.is-variable.is-2,
+.gallery .columns.is-variable.image {
   --columnGap: 0.5rem;
 }
 
@@ -10366,7 +10371,8 @@ label.panel-block:hover {
     width: 8.33333333%;
   }
 
-  .tile.is-2 {
+  .tile.is-2,
+  .gallery .tile.image {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
@@ -11449,5 +11455,9 @@ label.panel-block:hover {
 .footer {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem;
+}
+
+.gallery .draggable-source--is-dragging {
+  visibility: hidden;
 }
 

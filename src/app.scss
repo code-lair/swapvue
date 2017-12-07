@@ -1,11 +1,25 @@
 @import '~bulma';
+@import '~animate.css';
 
 .gallery {
+    @extend .is-12;
+
     .image {
         @extend .is-2;
+        border-radius: 1.5px;
     }
+    .draggable--over {
+        @extend .pulse;
+        @extend .animated;
+        @extend .infinite;
+    }
+    
+    .draggable-source--is-dragging img{
+        display:none;
+    }
+}
 
-    .draggable-source--is-dragging{
-        visibility: hidden;
-    }
+.draggable-mirror {
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px 3px 0px;
 }

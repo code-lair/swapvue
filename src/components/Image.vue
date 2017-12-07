@@ -1,5 +1,5 @@
 <template>
-<figure class="image is-128x127 column">
+<figure class="image is-128x128">
     <img :src="src" :alt="alt">
 </figure>
 </template>
@@ -23,6 +23,11 @@ export default {
             get: function() {
                 return `placeholder-${this.image.id}`;
             }
+        }
+    },
+    methods: {
+        enlarge: function(){
+            this.img.src
         }
     }
 }

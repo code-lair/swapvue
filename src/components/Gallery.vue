@@ -6,7 +6,7 @@
 
 <script>
 import GalleryImage from './Image';
-import { Swappable, Plugins } from '@shopify/draggable';
+import { Draggable, Plugins } from '@shopify/draggable';
 export default {
     name: 'gallery',
     data: () => {
@@ -24,14 +24,11 @@ export default {
         }
     },
     mounted: function () {
-        this.swappable = new Swappable(this.$el, {
-            draggable: '.image',
-            swapAnimation: {
-                duration: 200,
-                easingFunction: 'ease-in-out',
-            },
-            plugins: [Plugins.SwapAnimation],
+        this.swappable = new Draggable(this.$el, {
+            draggable: '.image'
         });
+
+        console.log(this.swappable);
     },
     components: {'gallery-image': GalleryImage}
 }
